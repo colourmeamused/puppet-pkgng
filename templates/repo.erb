@@ -2,6 +2,7 @@
 
 <%= @name -%>: {
     url:         "<% if @mirror_type =~ /srv/i %>pkg+<% end %><%= @protocol %>://<%= @packagehost %><%= @repopath %>",
+    priority: <%= @priority %>,
     mirror_type: "<%= @mirror_type %>",
     enabled:     <% if @enabled == true or @enabled == 'yes' %>yes<% else %>no<% end %>,
 }

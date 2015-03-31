@@ -10,6 +10,7 @@ define pkgng::repo (
     $mirror_type = 'srv',
     $repopath    = '/${ABI}/latest',
     $enabled     = true,
+    $priority    = 0,
 ) {
   include ::pkgng
 
